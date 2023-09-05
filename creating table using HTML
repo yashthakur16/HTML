@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tables</title>
+        <link rel="Stylesheets" href="stylesheet.css">
+        <script src="info.js">
+        </script>
+        <style>
+            body
+            {
+                background-color: black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1 align="center"style="color:red;margin-top :60px;">Tables</h1>
+
+        <table align="center" width=60% border="1" bgcolor="pink">
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Yash</td>
+                    <td>Thakur</td>
+                    <td>PIMPRI</td>
+                </tr>
+                <tr>
+                    <td>Rohan</td>
+                    <td>Kadu</td>
+                    <td>CHINCHWAD</td>
+                </tr>
+                <tr>
+                    <td>Ritwik</td>
+                    <td>Patil</td>
+                    <td>Akurdi</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Anuj</td>
+                    <td rowspan="2">Rawat</td>
+                    <td>Aisan galli</td>
+                </tr>
+                <tr>
+                    <td>Dadar chowk</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
