@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <br>
+        <input type="submit" >
+    </form>
+
+    <script>
+        function validateForm() {
+            var userId = document.getElementById("userId").value;
+            var password = document.getElementById("password").value;
+
+            if (userId === "" || password === "") {
+                alert("Both User ID and Password are required.");
+                return false; // Prevent form submission
+            }
+
+            // Continue with form submission or other actions
+            return true;
+        }
+    </script>
+</body>
+</html>
