@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal Style sheet</title>
+<style>
+{
+background-color: blue;
+}
+h1
+{
+color:maroon;
+margin-left:30px;
+}
+</style>
+</head>
+<body>
+<h1>This is internal style sheet</h1>
+</body>
+</html>
