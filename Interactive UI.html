@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive User Interface</title>
+  
+  <!-- Bootstrap CSS (You can link to the CDN or use local files) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Custom CSS (if needed) -->
+  <link rel="stylesheet" href="custom.css">
+
+  <style>
+    /* Additional custom CSS can go here */
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Interactive User Interface</h1>
+
+      <!-- Form-Based Data Entry with Bootstrap -->
+      <form id="data-entry-form">
+        <div class="form-group">
+          <label for="inputField">Input Field:</label>
+          <input type="text" class="form-control" id="inputField" placeholder="Enter data">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <!-- Input Group with Bootstrap -->
+      <div class="input-group mt-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Visualization Component -->
+    <div class="col-sm-6">
+      <h2>Visualization</h2>
+      <div id="visualization">
+        <!-- Your visualization content will be inserted here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JavaScript (You can link to the CDN or use local files) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  document.getElementById("data-entry-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    const inputData = document.getElementById("inputField").value;
+
+    // Pass inputData to your visualization component
+    updateVisualization(inputData);
+  });
+
+  function updateVisualization(inputData) {
+    // Implement your visualization logic here using D3.js, Chart.js, or other libraries
+    // Update the "visualization" element with the visualization based on inputData
+  }
+</script>
+
+</body>
+</html>
