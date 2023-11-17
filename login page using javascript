@@ -25,7 +25,7 @@
                 return false; // Prevent form submission
             }
 
-            // Continue with form submission or other actions
+            // Continue with form submission or other actions 
             return true;
         }
     </script>
