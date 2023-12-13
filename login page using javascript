@@ -4,6 +4,7 @@
     <title>Login Form</title>
 </head>
 <body>
+
     <h1>Login</h1>
     <form id="loginForm" onsubmit="return validateForm()">
         <label for="userId">User ID:</label>
@@ -29,5 +30,6 @@
             return true;
         }
     </script>
+
 </body>
 </html>
