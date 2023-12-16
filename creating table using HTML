@@ -7,12 +7,10 @@
         <script src="info.js">
         </script>
         <style>
-
             body
             {
                 background-color: black;
             }
-
         </style>
     </head>
     
